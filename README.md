@@ -15,8 +15,9 @@ only do this once.
 
 > [!IMPORTANT]
 > Now run Test Xbox Live Connection. It must fail at DNS. If it passes, your
-> router answers DNS itself and the console is online before the exploit
-> runs. Turn off DNS redirection in the router and test again.
+> router ignores the DNS server you set and resolves names anyway, so the
+> console is online before the exploit runs. Turn off DNS redirection in the
+> router and test again.
 
 2. Download `AutoDNS.xex` from the
 [latest release](https://github.com/dclstn/Xbox360AutoDNS/releases/latest)
