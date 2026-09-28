@@ -56,6 +56,27 @@ Cloudflare, pass them as arguments:
 ./build.sh 8.8.8.8 8.8.4.4
 ```
 
+### Without Windows
+
+`docker/` runs the same build under Wine in a container. You need Docker
+and the XDK 21256 installer, `XDKSetupXenon21256.*.exe`.
+
+Unpack the XDK into the `autodns-xdk` Docker volume once. Pass the folder
+that holds the installer:
+
+```bash
+docker/setup-xdk.sh ~/Downloads
+```
+
+Then build. `docker/run.sh` runs a command in the container, `./build.sh`
+when you give none:
+
+```bash
+docker/run.sh                              # Cloudflare
+docker/run.sh ./build.sh 8.8.8.8 8.8.4.4
+docker/run.sh ./variants.sh
+```
+
 The [release assets](https://github.com/dclstn/Xbox360AutoDNS/releases/latest)
 also include prebuilt Google, Quad9 and OpenDNS versions. Rename the one you
 download to `AutoDNS.xex` and continue from step 2.
