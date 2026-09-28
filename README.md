@@ -1,5 +1,9 @@
 # Xbox360AutoDNS
 
+A fork of [dclstn/Xbox360AutoDNS](https://github.com/dclstn/Xbox360AutoDNS)
+that reads the DNS servers from `AutoDNS.ini` and shows a notification on the
+console.
+
 DashLaunch plugin for an Xbox 360 running BadUpdate or BadAvatar. Until the
 exploit runs, the console has no working DNS, so the stock dashboard can't
 reach Xbox Live. Once the exploit loads AutoDNS, it switches the console to
@@ -20,7 +24,7 @@ only do this once.
 > set. Turn off DNS redirection in the router until the test fails.
 
 2. Download `AutoDNS.xex` and `AutoDNS.ini` from the
-[latest release](https://github.com/dclstn/Xbox360AutoDNS/releases/latest)
+[latest release](https://github.com/adrianoadum/Xbox360AutoDNS/releases/latest)
 and copy both to the root of the USB stick. Add `AutoDNS.xex` to `launch.ini`
 above any plugin that needs the network.
 
