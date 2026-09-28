@@ -4,9 +4,8 @@
 # that docker/setup-xdk.sh fills; set XDK to use another volume or an absolute
 # path to an XDK folder instead.
 #
-#   docker/run.sh                              # ./build.sh, Cloudflare
-#   docker/run.sh ./build.sh 8.8.8.8 8.8.4.4
-#   docker/run.sh ./variants.sh
+#   docker/run.sh           # ./build.sh
+#   docker/run.sh bash      # a shell in the container
 set -e
 cd "$(dirname "$0")/.."
 
